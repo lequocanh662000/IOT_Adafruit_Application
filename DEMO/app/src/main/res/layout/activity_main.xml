@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iot.fpt.bku.MainActivity">
+
+    //for Temperature infor
+    <TextView
+    android:id="@+id/txtTemperature"
+    android:text="35°C"
+
+    android:background="#ff0000"
+    android:textSize="30dp"
+    android:textColor="#ffffff"
+    android:textStyle="bold"
+    android:gravity="center"
+
+    app:layout_widthPercent="35%"
+    app:layout_heightPercent="25%"
+    app:layout_marginStartPercent="10%"
+    app:layout_marginTopPercent="10%"
+    />
+// for Humidity infor
+    <TextView
+        android:id="@+id/txtHumidity"
+        android:text="20%"
+
+        android:background="#00CC66"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="25%"
+        app:layout_marginStartPercent="55%"
+        app:layout_marginTopPercent="10%"
+        />
+
+// for Buttons show
+    <ToggleButton
+        android:id="@+id/btnLED"
+
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="40%"
+        app:layout_marginTopPercent="50%"
+
+        android:background="@drawable/toggle_selector"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+// extra image
+    <ImageView
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/bklogo"
+        app:layout_heightPercent="20%"
+        app:layout_marginStartPercent="80%"
+        app:layout_marginTopPercent="90%"
+        app:layout_widthPercent="20%" />
+    // heart icon
+    <ImageView
+        android:src="@drawable/iconhome"
+        android:scaleType="centerInside"
+        android:background="#ff0000"
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="7%"
+        app:layout_marginStartPercent="10%"
+        app:layout_marginTopPercent="10%"
+        />
+    // water icon
+    <ImageView
+        android:src="@drawable/humidity"
+        android:scaleType="centerInside"
+        android:background="#00CC66"
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="7%"
+        app:layout_marginStartPercent="55%"
+        app:layout_marginTopPercent="10%"
+        />
+
+// them ti chu
+    <TextView
+        android:text="BKU_IOT"
+        android:gravity="center"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="20%"
+        app:layout_marginStartPercent="0%"
+        app:layout_marginTopPercent="90%"
+        android:id="@+id/textView" />
+</android.support.percent.PercentRelativeLayout>
